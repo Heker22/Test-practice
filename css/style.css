@@ -1,23 +1,8 @@
-.icon-list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-}
-.icon{
-    fill: violet;
+.wrap{
     width: 200px;
     height: 200px;
-    border: 2px  dashed gray;
-    border-radius: 20px;
-    fill-opacity: 0.5;
-    cursor: pointer;
-    stroke: gray;
-    stroke-opacity: 0.5;
-}
-.icon:hover,
-.icon:focus{
-    fill-opacity:1 ;
-    stroke-opacity: 1;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: 2px solid gray;
+    background-image: url(../img/cat-test.svg);
 }
