@@ -1,8 +1,37 @@
-.wrap{
-    width: 200px;
-    height: 200px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    border: 2px solid gray;
-    background-image: url(../img/cat-test.svg);
+/*.box{
+    width: 250px;
+    height: 250px;
+    background-color: cornflowerblue;
+    transition-property: background-color, border-radius, transform;
+    transition-duration: 2000ms;
+    transition-timing-function: ease;
+    margin: 100px;
+}*/
+/*.box:hover{
+    border-radius: 50%;
+    background-color: darkgoldenrod;
+    transform: rotate(-50deg);
+}*/
+body{
+    background-color: skyblue;
+}
+.box-img {
+    display: flex;
+    justify-content: space-between;
+}
+.sun{
+    transition-property: transform;
+    transition-duration: 15000ms;
+    transition-timing-function: ease;
+}
+.sun:hover {
+    transform: rotate(360deg);
+}
+.clouds{
+    transition-property: transform;
+    transition-duration: 5000ms;
+    transition-timing-function: ease;
+}
+.clouds:hover{
+    transform: translateX(-700px);
 }
