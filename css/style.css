@@ -11,7 +11,7 @@
     border-radius: 50%;
     background-color: darkgoldenrod;
     transform: rotate(-50deg);
-}*/
+}*//*
 body{
     background-color: skyblue;
 }
@@ -34,4 +34,33 @@ body{
 }
 .clouds:hover{
     transform: translateX(-700px);
+}
+*/
+.box{
+    background-image: url(../img/football\ pitch.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 700px;
+}
+.img-football{
+    height: 44px;
+    width: 46px;
+    margin-left: 325px;
+    transition-property: transform;
+    transition-duration: 5000ms;
+    transition-timing-function: ease;
+    margin-bottom: 50px;
+}
+.img-football:hover{
+    transform: translateY(650px) rotate(360deg);
+}
+.img-football-player{
+    width: 70px;
+    margin-left: 100px;
+    transition-property: transform;
+    transition-duration: 5000ms;
+    transition-timing-function: ease;
+}
+.img-football-player:hover{
+    transform: translate(-400px, 650px);
 }
