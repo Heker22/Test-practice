@@ -11,56 +11,172 @@
     border-radius: 50%;
     background-color: darkgoldenrod;
     transform: rotate(-50deg);
-}*//*
-body{
+}*/
+/*
+
+
+
+
+    .box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    animation-name: changeColor;
+    animation-duration: 2000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: skyblue;
+    }
+    25%{
+        background-color:  rgb(211, 172, 248);
+    }
+    50%{
+        background-color: rgb(245, 245, 163);
+    }
+    75%{
+        background-color: rgb(159, 196, 123);
+    }
+    100%{
+        background-color: skyblue;   
+    }
+}
+    .sun {
+    animation-name: rotate;
+    animation-duration: 15000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+.clouds {
+    animation-name: move;
+    animation-duration: 5000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+body {
     background-color: skyblue;
 }
+
 .box-img {
     display: flex;
     justify-content: space-between;
 }
-.sun{
-    transition-property: transform;
-    transition-duration: 15000ms;
-    transition-timing-function: ease;
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
-.sun:hover {
-    transform: rotate(360deg);
-}
-.clouds{
-    transition-property: transform;
-    transition-duration: 5000ms;
-    transition-timing-function: ease;
-}
-.clouds:hover{
-    transform: translateX(-700px);
-}
-*/
-.box{
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-1400px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}*/
+
+.box {
     background-image: url(../img/football\ pitch.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 700px;
 }
-.img-football{
+
+.img-football {
     height: 44px;
     width: 46px;
     margin-left: 325px;
-    transition-property: transform;
-    transition-duration: 5000ms;
-    transition-timing-function: ease;
     margin-bottom: 50px;
+    animation-name: football;
+    animation-duration: 5000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
-.img-football:hover{
-    transform: translateY(650px) rotate(360deg);
+
+@keyframes football {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(650px) rotate(360deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0);
+    }
 }
-.img-football-player{
+
+.img-football-player {
     width: 70px;
     margin-left: 100px;
-    transition-property: transform;
-    transition-duration: 5000ms;
-    transition-timing-function: ease;
+    animation-name: player;
+    animation-duration: 5000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
-.img-football-player:hover{
-    transform: translate(-400px, 650px);
+
+@keyframes player {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-200px, 580px);
+    }
+
+    50% {
+        transform: translate(-200px, 580px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.fireworks {
+    position: absolute;
+    width: 250px;
+    right: 1700px;
+    top: 250px;
+    opacity: 0;
+    animation-name: fireworks;
+    animation-duration: 4000ms;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fireworks {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
